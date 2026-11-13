@@ -1,0 +1,6 @@
+{
+  "name": "المنظومة الوطنية للأحزمة والشهادات - الجامعة التونسية للووشو كونغ فو",
+  "description": "المنظومة السحابية الموحدة لإدارة الأحزمة والرتب والشهادات للجامعة التونسية للووشو كونغ فو والرياضات التابعة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626" />
+      <stop offset="100%" stop-color="#991b1b" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring (Gold) -->
+  <circle cx="200" cy="200" r="190" fill="url(#goldGrad)" filter="url(#shadow)" />
+  <circle cx="200" cy="200" r="182" fill="#7f1d1d" stroke="#fef08a" stroke-width="3" />
+
+  <!-- Inner Crest Background (Tunisian Red) -->
+  <circle cx="200" cy="200" r="150" fill="url(#redGrad)" stroke="url(#goldGrad)" stroke-width="4" />
+
+  <!-- White Central Medallion (Tunisian Emblem Backdrop) -->
+  <circle cx="200" cy="200" r="105" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+
+  <!-- Tunisian Red Crescent & Star -->
+  <!-- Crescent -->
+  <path d="M 200,125 A 75,75 0 1,0 200,275 A 60,60 0 1,1 200,125 Z" fill="#e11d48" opacity="0.9" />
+  <!-- 5-Pointed Star -->
+  <polygon points="195,182 199,194 212,194 201,202 205,214 195,206 185,214 189,202 178,194 191,194" fill="#e11d48" />
+
+  <!-- Yin Yang / Martial Arts Dynamic Flame in Center -->
+  <g transform="translate(200, 200) scale(0.68) translate(-200, -200)">
+    <!-- Martial Arts Wushu Figure Dynamic Silhouette -->
+    <path d="M 195,145 C 198,145 204,142 204,136 C 204,130 198,127 195,127 C 190,127 186,130 186,136 C 186,142 190,145 195,145 Z" fill="#1e293b" />
+    <path d="M 185,150 L 175,170 L 160,165 L 150,175 L 170,185 L 180,175 L 185,200 L 170,240 L 185,245 L 200,210 L 225,235 L 235,225 L 210,195 L 220,180 L 245,170 L 240,160 L 215,168 L 195,150 Z" fill="#1e293b" />
+  </g>
+
+  <!-- Circular Text Path Arc for Arabic Title -->
+  <path id="textArcTop" d="M 55,200 A 145,145 0 0,1 345,200" fill="none" />
+  <path id="textArcBottom" d="M 345,200 A 145,145 0 0,1 55,200" fill="none" />
+
+  <text fill="#ffffff" font-family="'Cairo', sans-serif" font-size="20" font-weight="900" letter-spacing="2">
+    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">
+      الجامعة التونسية للووشو كونغ فو
+    </textPath>
+  </text>
+
+  <text fill="#fef08a" font-family="'Cairo', sans-serif" font-size="12" font-weight="800" letter-spacing="2">
+    <textPath href="#textArcBottom" startOffset="50%" text-anchor="middle">
+      FEDERATION TUNISIENNE DE WUSHU KUNG FU
+    </textPath>
+  </text>
+
+  <!-- Stars on Ring Sides -->
+  <polygon points="50,200 53,207 60,207 55,212 57,219 50,215 43,219 45,212 40,207 47,207" fill="#fef08a" />
+  <polygon points="350,200 353,207 360,207 355,212 357,219 350,215 343,219 345,212 340,207 347,207" fill="#fef08a" />
+</svg>
